@@ -60,7 +60,15 @@ var mountainTop = document.createElement("div");
 mountainTop.className = "mountain-top";
 mountain.appendChild(mountainTop);
 
+var t = 0 ;
+do { 
+  var mountainCap = document.createElement("div");
+mountainCap.className = ( "mountain-cap-" + (t + 1 ) );
+mountainTop.appendChild(mountainCap);
+t++;
 
+    
+} while(t<3);
 
 
 // document.body.onload = addElement;
