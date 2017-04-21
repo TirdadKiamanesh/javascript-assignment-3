@@ -3,19 +3,10 @@
 //view
 
 
-// document.body.onload = addElement;
 
-function show_image() { 
-  // create a new div element 
-  // and give it some content 
-
-    var view = document.createElement("view");
-
-    // This next line will just add it to the <body> tag
-    document.body.appendChild(view);
-
-// var view = document.createElement("div");
-// document.body.appendChild(view);
+var view = document.createElement("div");
+view.className = "view";
+document.body.appendChild(view);
 
 //   var view = document.createElement("div"); 
 //   var newContent = document.createTextNode("Hi there and greetings!"); 
@@ -24,8 +15,6 @@ function show_image() {
 //   // add the newly created element and its content into the DOM 
 //   var currentDiv = document.getElementById("div1"); 
 //   document.body.insertBefore(view, currentDiv); 
-}
-
 
 
 
@@ -38,22 +27,29 @@ function show_image() {
 
 //grass
 
-// var grass = document.createElement("div");
-// document.body.appendChild(view);
+var grass = document.createElement("div");
+grass.className = "grass";
+view.appendChild(grass);
 
 //sun
 
-// var sun = document.createElement("div");
-// document.body.appendChild(view);
+var sun = document.createElement("div");
+sun.className = "sun";
+view.appendChild(sun);
+
+
 
 // // while for ray from 1 to 5
 
-// // var n = 0;
+var n = 0;
 
-// // while (n < 6) {
-// //   n++;
-// //  ray-n;
-// // }
+while (n < 6) {
+  var ray = document.createElement("div")
+  ray.className = "ray";
+  view.appendChild(ray)
+  n++;
+ ray-n;
+}
 
 // // mountain and mountain top 
 
