@@ -45,19 +45,22 @@ var n = 0;
 
 while (n < 6) {
   var ray = document.createElement("div")
-  ray.className = "ray";
-  view.appendChild(ray)
+  ray.className = ( "ray-" + (n + 1) );
+  sun.appendChild(ray);
   n++;
- ray-n;
 }
 
 // // mountain and mountain top 
 
-// var mountain = document.createElement("div");
-// document.body.appendChild(view);
+var mountain = document.createElement("div");
+mountain.className = "mountain";
+view.appendChild(mountain);
 
-// var mountainTop = document.createElement("div");
-// document.body.appendChild(view);
+var mountainTop = document.createElement("div");
+mountainTop.className = "mountain-top";
+mountain.appendChild(mountainTop);
+
+
 
 
 // document.body.onload = addElement;
